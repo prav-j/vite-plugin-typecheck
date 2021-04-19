@@ -2,7 +2,7 @@ import * as path from 'path';
 import * as fs from 'fs';
 import typescript from 'typescript';
 
-export function loadConfig() {
+export function loadConfig(ts: typeof typescript) {
   const currentDir = process.cwd();
   const configPath = path.resolve(currentDir, 'tsconfig.json');
   if (!fs.existsSync(configPath)) {
@@ -10,9 +10,9 @@ export function loadConfig() {
   }
 
   const content = fs.readFileSync(configPath).toString();
-  const config = typescript.parseJsonConfigFileContent(
+  const config = ts.parseJsonConfigFileContent(
     JSON.parse(content),
-    typescript.sys,
+    ts.sys,
     path.dirname(configPath),
   );
   Object.assign(config.options, {

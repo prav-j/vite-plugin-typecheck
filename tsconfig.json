@@ -1,12 +1,19 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "ES2020",
+    "module": "CommonJS",
     "lib": ["ES2020", "DOM"],
     "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "build/@types",
     "types": ["node"],
     "moduleResolution": "node",
-    "outDir": "build"
+    "outDir": "build",
+    "preserveSymlinks": true,
+    "baseUrl": ".",
+    "paths": {
+      "typescript": ["node_modules/typescript/lib/typescript"],
+    }
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
