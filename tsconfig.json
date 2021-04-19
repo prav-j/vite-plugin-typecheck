@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "ES2020",
+    "lib": ["ES2020"],
+    "outDir": "build"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

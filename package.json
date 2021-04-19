@@ -1,0 +1,21 @@
+{
+  "name": "vite-plugin-typecheck",
+  "version": "0.0.1",
+  "author": "praveen8692 <praveen.41128@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveen8692/vite-plugin-typecheck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/praveen8692/vite-plugin-typecheck/issues"
+  },
+  "homepage": "https://github.com/praveen8692/vite-plugin-typecheck#readme",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
